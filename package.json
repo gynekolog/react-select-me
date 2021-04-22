@@ -58,7 +58,7 @@
     "clean": "rimraf lib",
     "lint": "eslint -c .eslintrc src",
     "prepublishOnly": "npm run lint && npm run clean && npm run build",
-    "install": "npm run lint && npm run clean && npm run build"
+    "install": "npm run build"
   },
   "dependencies": {
     "classnames": "^2.2.6",
