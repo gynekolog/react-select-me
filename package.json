@@ -43,6 +43,7 @@
   "license": "MIT",
   "main": "lib/ReactSelectMe.js",
   "types": "lib/ReactSelectMe.d.ts",
+  "files": ["lib/**/*"],
   "maintainers": [
     "maslianok <maslianok@gmail.com>"
   ],
