@@ -3,7 +3,12 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/__tests__/*"],
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "commonjs",
     // Tells TypeScript to read JS files, as
     // normally they are ignored as source files
@@ -16,6 +21,7 @@
     // Types should go into this directory.
     // Removing this would place the .d.ts files
     // next to the .js files
-    "outDir": "lib"
+    "outDir": "lib",
+    "esModuleInterop": true
   }
 }
