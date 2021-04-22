@@ -54,7 +54,7 @@
     "build": "npm run build:js && npm run build:css && npm run build:ts-types",
     "build:js": "babel --presets=react,es2015 --plugins=transform-object-assign,transform-class-properties,transform-object-rest-spread src --out-dir lib",
     "build:css": "postcss -u postcss-cssnext --postcss-cssnext.browsers \"last 2 versions\" -d lib src/ReactSelectMe.css",
-    "build:ts-types": "npx tsc",
+    "build:ts-types": "tsc",
     "clean": "rimraf lib",
     "lint": "eslint -c .eslintrc src",
     "prepublishOnly": "npm run lint && npm run clean && npm run build",
