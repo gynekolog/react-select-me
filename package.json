@@ -55,7 +55,8 @@
     "build:css": "postcss -u postcss-cssnext --postcss-cssnext.browsers \"last 2 versions\" -d lib src/ReactSelectMe.css",
     "clean": "rimraf lib",
     "lint": "eslint -c .eslintrc src",
-    "prepublishOnly": "npm run lint && npm run clean && npm run build"
+    "prepublishOnly": "npm run lint && npm run clean && npm run build",
+    "install": "npm run lint && npm run clean && npm run build"
   },
   "dependencies": {
     "classnames": "^2.2.6",
